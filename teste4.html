@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="./img/undraw_Profile_pic_re_iwgo.png">
+	<link href="https://fonts.cdnfonts.com/css/labor-union" rel="stylesheet">
+	<link href="https://fonts.cdnfonts.com/css/medula-one" rel="stylesheet">
+	<title>StudyBuddy - Página de Perfil</title>
+</head>
+
+<body>
+	<div class="HeaderContainer">
+		<header class="NavbarHeader">
+			<nav class="navbar navbar-light bg-light">
+				<h5 class="navbar-brand title" href="#">Seja bem vindo, TESTE!</h5>
+				<!-- OBS.N°1: Utilizar SESSION para implementar o nome do usuario-->
+				<div class="BackButton">
+					<a href="index.php">Voltar a página inicial</a>
+				</div>
+			</nav>
+		</header>
+	</div>
+	<div class="MainContainer">
+		<div class="card">
+			<div class="row">
+				<div class="col-12 col-md-6">
+					<div class="PerfilIntroductionContainer">
+						<section>
+							<div class="column">
+								<div class="PerfilImage">
+									<img src="./img/undraw_Profile_pic_re_iwgo.png" alt="">
+								</div>
+								<div class="PerfilIntroduction">
+									<div class="PerfilUsername">
+										<p>Ana Joana</p>
+										<!-- OBS.N°3: Utilizar o php pra colocar o nome do usuario cadastrado/logado-->
+									</div>
+									<div class="PerfilEmail">
+										<p>anajoanamendes@chiba.net.br</p>
+										<!-- OBS.N°4: Utilizar o php pra colocar o email do usuario cadastrado/logado-->
+									</div>
+									<div class="EditButton">
+									   <a href="">Editar</a>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+				<div class="col-12 col-md-6">
+					<div class="PerfilInformationContainer">
+						<section>
+							<div class="column2">
+								<div class="DescriptionContainer">
+									<div class="subTitle">
+										<h6 class="subtitleDescription">Descrição</h6>
+									</div>
+									<div class="cardDescription overflow-y-auto">
+										<div class="ContainerDescriptionArea">
+                                            <textarea class="descriptionArea" class="swal2-input" rows="3" cols="63"></textarea>
+
+											</textarea>
+										</div>
+									</div>
+								</div>
+
+								<div class="HistoricoContainer">
+									<div class="subTitle">
+										<h6 class="subtitleHistoric">Histórico</h6>
+									</div>
+									<div class="cardHistoric overflow-y-auto">
+										<div>
+
+
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+
+	body {
+		width: 100%;
+		height: 100vh;
+		background-color: #090D0A;
+	}
+
+	.NavbarHeader nav {
+		width: 100%;
+		height: 5rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: linear-gradient(90deg, rgba(138, 87, 55, 1) 40%, rgba(89, 45, 29, 1) 100%);
+		display: flex;
+	}
+
+	.NavbarHeader h5 {
+		font-size: 40px;
+		font-family: 'Medula One';
+		color: #f2edeb;
+		justify-content: left;
+		align-items: center;
+	}
+
+	.BackButton a {
+	    width: 50%;
+		border: 1px solid black;
+		margin-bottom: 30px;
+		margin-top: 10px;
+		background-color: #BF9673;
+		padding: 1px;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 20px;
+		font-family: sans-serif;
+		cursor: pointer;
+		text-align: center;
+		justify-content: right;
+		align-items: center;
+	}
+	
+	.BackButton a {
+		text-decoration: none;
+		color: #592D1D;
+		font-weight: 10px;
+	}
+
+	.BackButton:hover{
+		background-color: #f2edeb;
+		color: #592D1D;
+		transition: 0.5s;
+	}
+	
+	.EditButton {
+		width: 100%;
+		border: 1px solid black;
+		margin-bottom: 30px;
+		margin-top: 10px;
+		background-color: #BF9673;
+		padding: 1px;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 20px;
+		font-family: sans-serif;
+		cursor: pointer;
+		text-align: center;
+	}
+
+	.EditButton a {
+		text-decoration: none;
+		color: #592D1D;
+		font-weight: 10px;
+	}
+
+	.EditButton:hover{
+		background-color: #f2edeb;
+		color: #592D1D;
+		transition: 0.5s;
+	}
+
+	.MainContainer {
+		width: 100%;
+		height: 87vh;
+		background-color: #090D0A;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.card {
+		margin: 1px;
+		padding: 30px;
+		width: 80vw;
+		height: 75vh;
+		background-color: #e9dcd5;
+		color: #090D0A;
+		border-radius: 5px;
+	}
+
+	.PerfilIntroductionContainer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 65vh;
+	}
+
+	.PerfilInformationContainer {
+		display: flex;
+		justify-content: center;
+		align-items: start;
+		min-height: 65vh;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	/* Lado da introdução*/
+	.PerfilImage {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 30px;
+	}
+
+	.PerfilImage img {
+		width: 25rem;
+	}
+
+	.PerfilUsername {
+	    margin: 0;
+		padding: 0;
+		justify-content: center;
+		text-align: center;
+		font-weight: bold;
+		font-size: 24px;
+		font-family: sans-serif;
+	}
+
+	.PerfilEmail {
+	    margin: 0;
+		padding: 0;
+		justify-content: center;
+		text-align: center;
+		font-size: 14px;
+		font-family: sans-serif;
+	}
+
+	.DescriptionContainer {
+		display: block;
+		margin: 0;
+		padding: 0;
+	}
+
+	.HistoricoContainer {
+		display: block;
+		margin: 0;
+		padding: 0;
+	}
+
+	.column2 {
+		width: 100%;
+		min-height: 65vh;
+	}
+
+	.subtitleDescription {
+		text-align: center;
+		color: #592D1D;
+		font-family: 'Medula one';
+		font-size: 35px;
+		margin: 0;
+	}
+
+	.subtitleHistoric {
+		text-align: center;
+		align-items: center;
+		color: #592D1D;
+		font-family: 'Medula one';
+		font-size: 35px;
+	}
+
+	.cardDescription {
+		border: 1px solid #BF9673;
+        border-radius: 5px;
+        margin-top: 10px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        max-width: 600px;
+	}
+
+	.cardHistoric {
+		border: 1px solid #BF9673;
+        border-radius: 5px;
+        margin-top: 10px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        max-width: 600px;
+		max-height: 240px;
+	}
+
+	.ContainerDescriptionArea{
+		margin: 0;
+		padding: 0;
+	}
+	
+	 @media screen and (max-width: 768px) {
+            .NavbarHeader h5 {
+                font-size: 24px;
+            }
+            .PerfilImage img {
+                width: 80%;
+            }
+            .card {
+                padding: 15px;
+                width: 90vw;
+            }
+            .subtitleDescription, .subtitleHistoric {
+                font-size: 28px;
+            }
+            .BackButton a, .EditButton a {
+                font-size: 18px;
+            }
+        }
+
+</style>
+</html>
