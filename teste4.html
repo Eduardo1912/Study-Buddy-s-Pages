@@ -10,17 +10,18 @@
 	<link rel="stylesheet" href="./img/undraw_Profile_pic_re_iwgo.png">
 	<link href="https://fonts.cdnfonts.com/css/labor-union" rel="stylesheet">
 	<link href="https://fonts.cdnfonts.com/css/medula-one" rel="stylesheet">
+	<link href="https://fonts.cdnfonts.com/css/bree-serif-2" rel="stylesheet">
 	<title>StudyBuddy - Página de Perfil</title>
 </head>
 
 <body>
 	<div class="HeaderContainer">
 		<header class="NavbarHeader">
-			<nav class="navbar navbar-light bg-light">
-				<h5 class="navbar-brand title" href="#">Seja bem vindo, TESTE!</h5>
+			<nav class="navbar navbar-light bg-faded">
+				<h5 class="titlePerfil">Seja bem vindo, TESTE!</h5>
 				<!-- OBS.N°1: Utilizar SESSION para implementar o nome do usuario-->
-				<div class="BackButton">
-					<a href="index.php">Voltar a página inicial</a>
+				<div class="IndexButton">
+					<button><a href="index.php">Voltar para a página inicial</a></button>
 				</div>
 			</nav>
 		</header>
@@ -36,18 +37,18 @@
 									<img src="./img/undraw_Profile_pic_re_iwgo.png" alt="">
 								</div>
 								<div class="PerfilIntroduction">
+								  <div class="Information">
 									<div class="PerfilUsername">
-										<p>Ana Joana</p>
-										<!-- OBS.N°3: Utilizar o php pra colocar o nome do usuario cadastrado/logado-->
+										<p>Carolina Oliveira Cardoso</p>
 									</div>
 									<div class="PerfilEmail">
-										<p>anajoanamendes@chiba.net.br</p>
-										<!-- OBS.N°4: Utilizar o php pra colocar o email do usuario cadastrado/logado-->
+										<p>CarolinaOliveiraCardoso@gmail.com</p>
 									</div>
+								  </div>
 									<div class="EditButton">
-									   <a href="">Editar</a>
-									</div>
-								</div>
+										<button><a href="">Editar</a></button>
+								 </div>	
+									
 							</div>
 						</section>
 					</div>
@@ -102,64 +103,58 @@
 		background-color: #090D0A;
 	}
 
-	.NavbarHeader nav {
-		width: 100%;
-		height: 5rem;
+	nav {
 		display: flex;
+		align-items: center;
+		height: 5.5rem;
+		background-color: #693A25;
+	}
+
+	.titlePerfil {
+		justify-items: center;
+		font-size: 45px;
+		font-family: 'Medula One';
 		justify-content: center;
 		align-items: center;
-		background: linear-gradient(90deg, rgba(138, 87, 55, 1) 40%, rgba(89, 45, 29, 1) 100%);
-		display: flex;
-	}
-
-	.NavbarHeader h5 {
-		font-size: 40px;
-		font-family: 'Medula One';
 		color: #f2edeb;
-		justify-content: left;
-		align-items: center;
 	}
 
-	.BackButton a {
-	    width: 50%;
-		border: 1px solid black;
-		margin-bottom: 30px;
-		margin-top: 10px;
-		background-color: #BF9673;
-		padding: 1px;
-		border-radius: 5px;
-		cursor: pointer;
-		font-size: 20px;
-		font-family: sans-serif;
-		cursor: pointer;
-		text-align: center;
-		justify-content: right;
-		align-items: center;
-	}
-	
-	.BackButton a {
-		text-decoration: none;
-		color: #592D1D;
-		font-weight: 10px;
+	.IndexButton{
+		margin-bottom: 5px;
 	}
 
-	.BackButton:hover{
-		background-color: #f2edeb;
-		color: #592D1D;
-		transition: 0.5s;
+	.IndexButton button{
+      justify-content: right;
+	  background: #BF9673;
+	  width: 140px;
+	  height: 60px;
+	  border-radius: 5px;
+	  border: 1px solid #090D0A;
+	}
+
+	.IndexButton a{
+        text-decoration: none;
+		font-size: 18px;
+		font-family: arial;
+		font-weight: bold;
+		color: #592d1d;
+	}
+
+	.IndexButton button:hover{
+       background-color: #f2edeb;
+	   color: #592d1d;
+	   transition: 0.5s;
 	}
 	
-	.EditButton {
+	.EditButton button{
 		width: 100%;
 		border: 1px solid black;
-		margin-bottom: 30px;
-		margin-top: 10px;
+		margin-bottom: 40px;
 		background-color: #BF9673;
 		padding: 1px;
 		border-radius: 5px;
 		cursor: pointer;
 		font-size: 20px;
-		font-family: sans-serif;
 		cursor: pointer;
 		text-align: center;
 	}
@@ -167,10 +162,12 @@
 	.EditButton a {
 		text-decoration: none;
 		color: #592D1D;
-		font-weight: 10px;
+		font-weight: 100px;
+		font-family: Arial, Helvetica, sans-serif;
+		margin-bottom: 30px;
 	}
 
-	.EditButton:hover{
+	.EditButton button:hover{
 		background-color: #f2edeb;
 		color: #592D1D;
 		transition: 0.5s;
@@ -226,8 +223,6 @@
 	}
 
 	.PerfilUsername {
-	    margin: 0;
-		padding: 0;
 		justify-content: center;
 		text-align: center;
 		font-weight: bold;
@@ -236,12 +231,11 @@
 	}
 
 	.PerfilEmail {
-	    margin: 0;
-		padding: 0;
 		justify-content: center;
 		text-align: center;
-		font-size: 14px;
+		font-size: 18px;
 		font-family: sans-serif;
+
 	}
 
 	.DescriptionContainer {
