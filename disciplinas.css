@@ -1,0 +1,239 @@
+    body {
+		background-color: #693a25;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	* {
+		margin: 0;
+		padding: 0;
+	}
+
+	main {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		width: 100%;
+	}
+
+	.title1 {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		color: #f2edeb;
+		font-family: 'labor-union';
+	}
+
+	.title2 {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		color: #f2edeb;
+		font-family: 'labor-union';
+		font-size: 20px;
+	}
+
+	form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+	}
+
+	.subtitle {
+		position: relative;
+		bottom: 10px;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		color: #592D1D;
+		font-family: 'Medula one';
+		font-size: 35px;
+	}
+
+	.card {
+		margin: 1px;
+		padding: 30px;
+		width: 80vw;
+		height: 65vh;
+		background-color: #e9dcd5;
+		color: #090D0A;
+		border-radius: 5px;
+	}
+
+	.containerCard {
+		padding: 0px;
+		margin: 0px;
+		overflow-y: auto;
+	}
+
+	.cardSecondary {
+		display: flex;
+		background-color: #BF9673;
+		padding: 5px 10px;
+		border-radius: 10px;
+		color: #090D0A;
+		height: 60px;
+		width: 200px;
+		margin-left: auto;
+		margin-right: auto;
+		border: 1px solid black;
+		font-family: 'labor-union';
+		font-size: 20px;
+		justify-content: center;
+		align-items: center;
+
+	}
+
+	.btn_Confirmar {
+		margin: 8px;
+		background-color: #BF9673;
+		padding: 5px 10px;
+		height: 50px;
+		width: 150px;
+		border-radius: 10px;
+		color: #f2edeb;
+		border: 1px solid black;
+		font-family: 'labor-union';
+		font-size: 23px;
+
+	}
+
+	.btn_Cancelar {
+		margin: 8px;
+		background-color: #BF9673;
+		padding: 5px 10px;
+		height: 50px;
+		width: 150px;
+		border-radius: 10px;
+		color: #f2edeb;
+		border: 1px solid black;
+		font-family: 'labor-union';
+		font-size: 23px;
+	}
+
+	.overflow-y {
+		overflow-y: auto;
+	}
+
+	.disciplina{
+		position: relative;
+		bottom: 10px;
+		display: flex;
+		margin: 3px;
+	}
+
+	@media screen and (max-width: 1330px){
+	  .card {
+        height: auto;
+		width: 90vw;
+	  }
+		
+	  .title1 {
+	    font-size: 2rem;
+	  }
+	  
+	  .title2 {
+	    font-size: 2rem;
+	  }
+	}
+
+	@media screen and (max-width: 1064px){
+	  .subtitle {
+	    font-size: 1.5rem;
+	  }
+	  
+	  .btn_Cancelar {
+	     width: 120px;
+		 font-size: 20px;
+	  }
+	  
+	  .btn_Confirmar {
+	     width: 120px;
+		 font-size: 20px;
+	  }
+	  
+	  .cardSecondary {
+	     width: 150px;
+	  }
+	}
+
+	@media screen and (max-width: 1024px){
+		.subtitle {
+	    font-size: 1.5rem;
+	  }
+	  
+	  .btn_Cancelar {
+	     width: 120px;
+		 font-size: 20px;
+	  }
+	  
+	  .btn_Confirmar {
+	     width: 120px;
+		 font-size: 20px;
+	  }
+	  
+	  .cardSecondary {
+	     width: 150px;
+	  }
+	}
+
+	@media screen and (max-width: 768px){
+	  .title1 {
+	    font-size: 2.5rem;
+	  }
+	  
+	  .title2 {
+	     font-size: 2rem;
+	  }
+	  
+	  .containerCard {
+	    padding: 10px;
+		width: 100%;
+	  }
+	  
+	  .card {
+	    height: 700px;
+	  }
+	  
+	  .subtitle{
+	    font-size: 3rem;
+	  }
+	  
+	  .cardSecondary {
+	     width: 500px;
+		 font-size: 30px;
+	  }
+	  
+	  .btn_Confirmar {
+	    width: 200px;
+	    font-size: 35px;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+	  }
+	  
+	  .btn_Cancelar {
+	    width: 200px;
+	    font-size: 35px;
+		justify-content: center;
+		align-items: center;
+	  }
+	  
+	  .col {
+	    flex: 1 1 50%;
+		margin-bottom: 10px; 
+	  }
+	}
+	
+	@media screen and (max-height: 1000px){
+	  .containerCard{
+	  height: 100%;
+	  }
+	}
