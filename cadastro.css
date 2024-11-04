@@ -43,9 +43,17 @@
     padding: 3rem;
   }
   
-  .form input, .form textarea, .form button {
-  margin: 0.5rem 0; 
-}
+  .form input {
+    margin: 0.5rem 0;
+  }
+
+  .form textarea {
+    margin: 0.5rem 0;
+  }
+
+  .form button {
+    margin: 0.5rem 0;
+  }
 
   .title {
     margin-top: 30px;
@@ -71,9 +79,8 @@
     border-radius: 5px;
     cursor: pointer;
     font-size: 20px;
-    font-family: 'labor-union', sans-serif;
+    font-family: 'Bree Serif', sans-serif;                                                
     margin-top: 15px;
-    font-weight: bold;
   }
 
   .confirmButton button {
@@ -86,9 +93,8 @@
     border-radius: 5px;
     cursor: pointer;
     font-size: 20px;
-    font-family: 'labor-union', sans-serif;
+    font-family: 'Bree Serif', sans-serif;                                            
     cursor: pointer;
-    font-weight: bold;
   }
 
   .confirmButton a {
@@ -137,9 +143,7 @@
   .inputBox input {
     margin: 1px;
     padding: 1px;
-    border: 1px solid '#090d0a';
     border-radius: 5px;
-    box-shadow: 1px 1px 5px '#090d0a';
     height: 35px;
   }
 
@@ -147,10 +151,6 @@
     font-family: 'Bree Serif', sans-serif;
     font-size: 15px;
     color: '#090d0a';
-  }
-
-  .inputBox input:hover {
-    background-color: #f2edeb;
   }
 
   .inputBox input:focus-visible {
