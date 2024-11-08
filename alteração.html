@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="img/undraw_Personal_email_re_4lx7.png">
+    <link rel="stylesheet" href="img/undraw_Profile_pic_re_iwgo.png">
+    <link href="https://fonts.cdnfonts.com/css/bree-serif-2" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Medula One' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="css/alteração.css"/>
+    <title>StudyBuddy - Alteração</title>
+</head>
+<body>
+    <div class="container">
+        <div class="formImage">
+           <img src="img/undraw_Personal_email_re_4lx7.png" alt="Mulher alterando seu email">
+        </div>
+        <div class="form">
+          <form action="alteração.html" method="post">
+            <p class="title">
+                Incomodado com as suas informações de seu perfil? Mude para deixar igualzinho a sua cara!
+            </p>
+            <div class="imagePerfil">
+              <img src="./img/undraw_Profile_pic_re_iwgo.png" alt="Temporario">
+            </div>
+
+            <div class="inputGroup">
+              <div class="inputBox">
+                <label for="nome">Nome de usuario:</label>
+                <input id="nome" type="text" placeholder="Digite seu nome de Usuário" name="usuNome" size="40" required/>
+              </div>
+
+              <div class="inputBox">
+                <label for="dataNascimento">Data de nascimento:</label>
+                <input id="dataNascimento" type="date" placeholder="Coloque sua data de nascimento" name="usuDataNascimento" required/>
+              </div>
+
+              <div class="inputBox">
+                <label for="imagem">Foto de perfil:</label>
+                <input type="file" id="imagem" name="imagem"/>
+              </div>
+
+              <div class="inputBox">
+                <div class="overflow-y-auto">
+                  <label for="descricao">Descrição:</label>
+                  <textarea class="textarea" name="usuDescrição" id="descricao" rows="3" cols="64" required></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="py-1">
+              <div class="row">
+                <div class="col">
+                  <div class="confirmButton">
+                    <button><a type="submit">Confirmar alteração</a></button>
+                  </div>
+                </div>
+                <div class="col">
+                    <div class="backButton">
+                      <button><a href="index.php">Voltar</a></button>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            
+          </form>
+        </div>
+    </div>
+</body>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-color: #693a25;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container{
+        width: 80%;
+        height: 80vh;
+        display: flex;
+        border-radius: 10px;
+    }
+
+    .formImage {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f2edeb;
+        padding: 1rem;
+    }
+
+    .formImage img{
+        width: 40rem;
+    }
+
+    .form {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: left;
+        flex-direction: column;
+        background-color: #eee5e0;
+        padding: 3rem;
+    }
+
+    .imagePerfil {
+	      width: 100%;
+	      display: flex;
+	      justify-content: center;
+	      align-items: center;
+	      margin-bottom: 10px;
+    }
+
+   .imagePerfil img {
+	     width: 10rem;
+    }
+
+    .form input {
+        margin: 0.5rem 0;
+    }
+
+    .form textarea {
+        margin: 0.1rem 0;
+    }
+
+    .form button {
+        margin: 0.5rem 0;
+    }
+
+    .title {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: start;
+        font-family: 'Medula One', sans-serif;
+        color: #592d1d;
+        font-size: 2rem;
+        line-height: 0.9;
+    }
+
+    .inputGroup {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;                                   
+    }
+
+    .inputBox textarea{
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px; 
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .inputBox {
+        font-family: 'Bree Serif', sans-serif;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;   
+    }
+
+    .inputGroup label { 
+        font-size: 18px;
+        color: #592D1D;
+        font-family: 'Bree Serif', sans-serif;                                        
+    }
+
+    .inputBox input {
+        margin: 1px;
+        padding: 1px;
+        border-radius: 5px;
+        height: 35px;
+    }
+
+    .inputBox ::placeholder{
+        font-family: 'Bree Serif', sans-serif;
+        font-size: 15px;
+   }
+
+   .inputBox input:focus-visible {
+    font-family: 'Bree Serif', sans-serif;
+    font-size: 15px;
+    color: #090d0a;
+   }
+
+    .confirmButton button, .backButton button {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #090D0A;
+        color: #592d1d;
+        background-color: #bf9673;
+        padding: 1px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 20px;
+        font-family: 'Bree Serif', sans-serif;
+        cursor: pointer;                                    
+    }
+
+    .backButton a, .confirmButton a{
+        text-decoration: none;
+        color: #592d1d;
+    }
+
+    .confirmButton button:hover, .backButton button:hover {
+        background-color: #f2edeb;
+        color: #592d1d;
+        transition: 0.5s;
+    }
+
+    @media screen and (max-width: 1330px) {
+      .formImage {
+        display: none;
+      }
+
+      .container {
+        width: 50%;
+      }
+
+      .form {
+        width: 100%;
+        height: 100%;
+      }
+
+      @media screen and (max-width: 1045px) {
+         .container {
+            height: 87vh;
+            width: 90%;
+         }
+
+         .inputGroup {
+          flex-direction: column;
+         }
+
+         .title{
+	          font-size: 2.5rem;
+	      }
+
+        textarea {
+          width: 100%;
+        }
+      }
+
+      @media screen and (max-width: 581px){
+        .title{
+          font-size: 2rem;
+        }
+      }
+    }
+
+</style>
+</html>
