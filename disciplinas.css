@@ -1,5 +1,6 @@
     body {
 		background-color: #693a25;
+		width: 100%;
 		height: 100vh;
 		display: flex;
 		justify-content: center;
@@ -70,6 +71,8 @@
 	.containerCard {
 		padding: 0px;
 		margin: 0px;
+		max-width: 100%;
+		height: 100%;
 		overflow-y: auto;
 	}
 
@@ -122,118 +125,9 @@
 		overflow-y: auto;
 	}
 
-	.disciplina{
+	p {
 		position: relative;
-		bottom: 10px;
-		display: flex;
-		margin: 3px;
-	}
-
-	@media screen and (max-width: 1330px){
-	  .card {
-        height: auto;
-		width: 90vw;
-	  }
-		
-	  .title1 {
-	    font-size: 2rem;
-	  }
-	  
-	  .title2 {
-	    font-size: 2rem;
-	  }
-	}
-
-	@media screen and (max-width: 1064px){
-	  .subtitle {
-	    font-size: 1.5rem;
-	  }
-	  
-	  .btn_Cancelar {
-	     width: 120px;
-		 font-size: 20px;
-	  }
-	  
-	  .btn_Confirmar {
-	     width: 120px;
-		 font-size: 20px;
-	  }
-	  
-	  .cardSecondary {
-	     width: 150px;
-	  }
-	}
-
-	@media screen and (max-width: 1024px){
-		.subtitle {
-	    font-size: 1.5rem;
-	  }
-	  
-	  .btn_Cancelar {
-	     width: 120px;
-		 font-size: 20px;
-	  }
-	  
-	  .btn_Confirmar {
-	     width: 120px;
-		 font-size: 20px;
-	  }
-	  
-	  .cardSecondary {
-	     width: 150px;
-	  }
-	}
-
-	@media screen and (max-width: 768px){
-	  .title1 {
-	    font-size: 2.5rem;
-	  }
-	  
-	  .title2 {
-	     font-size: 2rem;
-	  }
-	  
-	  .containerCard {
-	    padding: 10px;
-		width: 100%;
-	  }
-	  
-	  .card {
-	    height: 700px;
-	  }
-	  
-	  .subtitle{
-	    font-size: 3rem;
-	  }
-	  
-	  .cardSecondary {
-	     width: 500px;
-		 font-size: 30px;
-	  }
-	  
-	  .btn_Confirmar {
-	    width: 200px;
-	    font-size: 35px;
-		text-align: center;
-		justify-content: center;
-		align-items: center;
-	  }
-	  
-	  .btn_Cancelar {
-	    width: 200px;
-	    font-size: 35px;
-		justify-content: center;
-		align-items: center;
-	  }
-	  
-	  .col {
-	    flex: 1 1 50%;
-		margin-bottom: 10px; 
-	  }
+		top: 10px;
+		left: 5px;
 	}
 	
-	@media screen and (max-height: 1000px){
-	  .containerCard{
-	  height: 100%;
-	  }
-	}

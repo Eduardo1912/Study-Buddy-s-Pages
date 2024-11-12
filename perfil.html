@@ -11,32 +11,36 @@
 	<link href="https://fonts.cdnfonts.com/css/labor-union" rel="stylesheet">
 	<link href="https://fonts.cdnfonts.com/css/medula-one" rel="stylesheet">
 	<link href="https://fonts.cdnfonts.com/css/bree-serif-2" rel="stylesheet">
-	<link rel="text/css" href="css/perfil.css">
-	<link rel="stylesheet" type="text/css" href="css/perfil.css"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/perfil.css"/> 
+	<link rel="stylesheet" href="img/undraw_Personal_email_re_4lx7.png">
+	
 	<title>StudyBuddy - Página de Perfil</title>
 </head>
 
 <body>
-	<div class="HeaderContainer">
-		<header class="NavbarHeader">
-			<nav class="navbar navbar-light bg-faded">
-				<h5 class="titlePerfil">Seja bem vindo, TESTE!</h5>
-				<!-- OBS.N°1: Utilizar SESSION para implementar o nome do usuario-->
-				<div class="IndexButton">
-					<button><a href="index.php">Voltar para a página inicial</a></button>
-				</div>
-			</nav>
-		</header>
+	<div class="headerContainer">
+		<nav class="navbar navbar-light bg-faded">
+			<div class="container-fluid">
+			  <p class="navbar-brand">
+				<a class="exitIcon" href="#"><i class="bi bi-arrow-left-square-fill"></i></a>
+				StudyBuddy
+			  </p>
+			</div>
+		  </nav>
 	</div>
 	<div class="MainContainer">
 		<div class="card">
 			<div class="row">
-				<div class="col-12 col-md-6">
+				<div class="col-12 col-md-6 col-sm-6">
 					<div class="PerfilIntroductionContainer">
 						<section>
 							<div class="column">
+								<div class="subTitle">
+									<h6 class="subtitleIntroduction">Informações do usuário</h6>
+								</div>
 								<div class="PerfilImage">
-									<img src="./img/undraw_Profile_pic_re_iwgo.png" alt="">
+									<img src="img/undraw_Personal_email_re_4lx7.png"></img>
 								</div>
 								<div class="PerfilIntroduction">
 								  <div class="Information">
@@ -58,7 +62,7 @@
 						</section>
 					</div>
 				</div>
-				<div class="col-12 col-md-6">
+				<div class="col-12 col-md-6 col-sm-6">
 					<div class="PerfilInformationContainer">
 						<section>
 							<div class="column2">
@@ -68,21 +72,17 @@
 									</div>
 									<div class="cardDescription overflow-y-auto">
 										<div class="ContainerDescriptionArea">
-                                            <textarea class="descriptionArea" class="swal2-input" rows="3" cols="63" name="usuDescrição"> Olá meu nome é <!-- Usar php pra colocar o nome da pessoa aqui-->, e eu sou novo aqui </textarea>
+                                            <textarea class="descriptionArea" class="swal2-input" rows="3" cols="63" name="usuDescrição"> Olá meu nome é teste, e eu sou um novato aqui!</textarea>
 										</div>
 									</div>
 								</div>
 
-								<div class="HistoricoContainer">
+								<div class="FavoriteContainer">
 									<div class="subTitle">
-										<h6 class="subtitleHistoric">Histórico</h6>
+										<h6 class="subtitleFavorite">Favoritos</h6>
 									</div>
-									<div class="cardHistoric overflow-y-auto">
-										<div>
-
-
-
-										</div>
+									<div class="cardFavorite overflow-y-auto">
+									 
 									</div>
 								</div>
 							</div>

@@ -125,7 +125,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family: 'Bree Serif', sans-serif;
   }
 
   .inputBox {
@@ -150,11 +149,10 @@
   .inputBox ::placeholder {
     font-family: 'Bree Serif', sans-serif;
     font-size: 15px;
-    color: '#090d0a';
   }
 
   .inputBox input:focus-visible {
-    border: 1px solid '#090d0a';
+    border: 1px solid #090d0a;
     border-radius: 3px;
     outline: none;
   }
@@ -174,6 +172,7 @@
 
     .form {
       width: 100%;
+      height: 100%;
     }
   }
 
@@ -188,7 +187,7 @@
         padding: 2rem; 
     }
 	
-	.title a{
+	.title p{
 	margin-top: 60px;
 	font-size: 2rem;
 	}
@@ -212,15 +211,15 @@
     }
 
     .title h1 {
-        font-size: 2rem; 
+        font-size: 3.5rem; 
     }
 }
 
 
 @media screen and (max-width: 768px) {
   .container{
-      height: 1rem;
-      width: 80%;
+      width: 100%;
+      height: 75%;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -228,27 +227,51 @@
 
     .inputGroup label,
     .inputBox input {
-        font-size: 1rem; 
-        margin-top: 5px; 
+        font-size: 1.2rem; 
+        width: 100%; 
     }
 
-    .registerButton a,
+    .loginButton button,
     .confirmButton button {
-        font-size: 1rem; 
-        padding: 0.75rem; 
+        font-size: 1.5rem; 
+    }
+    
+    .form{
+      height: 100%;
     }
 
     .title h1 {
-        font-size: 1.5rem;
+        font-size: 3rem;
     }
 
     .forgotPasswordLink a {
         font-size: 1rem;
         margin-bottom: 1rem ;
     }
-
-    .inputGroup {
-        margin-bottom: 3rem;
+  
+    .confirmButton button, .loginButton button{
+      max-height: 80%;
     }
+}
 
+@media screen and (max-width: 575px){
+   .container{
+     width: 85%;
+   }
+   
+   .title {
+     font-size: 2.5rem;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+   }
+   
+   .form {
+     width: 100%;
+    
+   }
+   
+   .inputBox {
+     max-width: 110%;
+   }
 }

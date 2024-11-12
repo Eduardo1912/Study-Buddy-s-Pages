@@ -11,23 +11,22 @@
     <link href="https://fonts.cdnfonts.com/css/labor-union" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/medula-one" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/bree-serif-2" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/login.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/login.css"/>
     <title>StudyBuddy - Login</title>
   </head>
-
   <body>
-    <div class="container">
+     <div class="container">
       <div class="formImage">
-        <img src="./img/undraw_Studying_re_deca(1).png" alt="TENTE NOVAMENTE!">
+       <img src="./img/undraw_Studying_re_deca(1).png" alt="TENTE NOVAMENTE!">
       </div>
-
+        
       <div class="form">
-        <form action="../back/verificar.php" method="POST">
-          <div class="title">
-            <h1>Faça o seu login</h1>
-          </div>
-
-          <div class="inputGroup">
+      <form method="POST" action="../back/verificar.php">
+       <div class="title">
+         <h1>Login</h1>
+       </div>
+       
+       <div class="inputGroup">
             <div class="inputBox">
               <label for="senha">E-mail:</label>
               <input id="senha" type="text" placeholder="Digite seu E-mail" name="usuEmail" size="40" required/>
@@ -38,8 +37,8 @@
               <input id="senha" type="password" placeholder="Digite sua senha" name="usuSenha" size="40" required/>
             </div>
           </div>
-
-          <div class="py-3">
+          
+           <div class="py-3">
             <div class="py-1">
               <div class="forgotPasswordLink">
                 <a href="#">Esqueceu sua senha?</a>
@@ -62,9 +61,9 @@
               </div>
             </div>
           </div>
-
-        </form>
+          
+      </form>
       </div>
-      </div>
+     </div>
   </body>
   </html>
