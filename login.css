@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/falling-sky');
+
 * {
       margin: 0;
       padding: 0;
@@ -5,7 +7,7 @@
     }
     
     body {
-      background-color:  #693a25;
+      background-color:  #212529;
       width: 100%;
       height: 100vh;
       display: flex;
@@ -21,16 +23,16 @@
     }
     
     .formImage {
-	width: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #f2edeb;
-	padding: 1rem;
+	   width: 50%;
+	   display: flex;
+	   justify-content: center;
+	   align-items: center;
+	   background-color: #2b3035;
+	   padding: 1rem;
   }
 
   .formImage img {
-	width: 32rem;
+	width: 40rem;
   }
 
   .form {
@@ -39,34 +41,33 @@
 	justify-content: center;
 	align-items: left;
 	flex-direction: column;
-	background-color: #eee5e0;
+	background-color: #343A40;
 	padding: 3rem;
   }
   
     .title {
 	display: flex;
 	justify-content: center;
-
-  margin-top: 50px;
-	font-family: 'Medula One', sans-serif;
-	color: #592D1D;
+  margin-top: 30px;
+	font-family: 'Falling Sky', sans-serif;  
+	color: #FFFFFF;
   }
   
    .title h1 {
-	font-size: 60px;
+    font-size: 2rem;
   }
 
 .inputGroup {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	font-family: arial;
 	font-weight: bold;
+  font-family: 'Bree Serif', sans-serif;
   }
   
   .inputGroup label {
-	font-size: 25px;
-	color: #592D1D;
+	font-size: 20px;
+	color: #FFFFFF;
 	font-family: 'Bree Serif', sans-serif;
   }
 
@@ -79,16 +80,16 @@
    .inputBox input {
 	margin: 1px;
 	padding: 1px;
-	border: 1px solid '#090d0a';
+	border: 1px solid #090d0a;
 	border-radius: 5px;
-	box-shadow: 1px 1px 5px '#090d0a';
+	box-shadow: 1px 1px 5px #090d0a;
 	height: 35px;
   }
 
   .inputBox::placeholder {
-	font-family: 'Bree Serif', sans-serif;
-	font-size: 15px;
-	color: '#090d0a'
+  font-family: 'Bree Serif', sans-serif;
+  font-size: 15px;
+	color: #090d0a;
   }
 
   .inputBox input:hover {
@@ -104,54 +105,41 @@
   .registerButton button {
 	width: 100%;
 	margin: 1px;
-	border: 1px solid black;
-	background-color: #BF9673;
-	color: #f2edeb;
+	border: 1px solid #000000;
+	background-color: #212529;
+	color: #FFFFFF;
 	padding: 1px;
 	border-radius: 5px;
 	cursor: pointer;
 	margin-top: 3px;
 	font-size: 20px;
-	font-family: 'Bree Serif', sans-serif;											  
+	font-family: 'Falling Sky', sans-serif;  										  
   }
 
   .confirmButton button {
 	width: 100%;
 	margin: 1px;
-	border: 1px solid black;
-	background-color: #BF9673;
-	color: #592D1D;
+  border: 1px solid #000000;
+  background-color: #212529;
+  color: #FFFFFF;
 	padding: 1px;
 	border-radius: 5px;
 	cursor: pointer;
 	margin-top: 5px;
 	font-size: 20px;
-	font-family: 'Bree Serif', sans-serif; 									  
-	cursor: pointer;
+  font-family: 'Falling Sky', sans-serif;  							  
   }
 
   .confirmButton button a {
 	text-decoration: none;
 	font-weight: 10px;
-	color: #592D1D;
-  }
-
-  .confirmButton button:hover {
-	background-color: #f2edeb;
-	color: #592D1D;
-	transition: 0.5s;
+	color:#FFFFFF;
   }
 
   .registerButton button a {
 	text-decoration: none;
 	font-weight: 10px;
-	color: #592D1D;
-  }
-
-  .registerButton button:hover {
-	background-color: #f2edeb;
-	color: #bf9673;
-	transition: 0.5s;
+	color: #FFFFFF;
   }
 
   .forgotPasswordLink a {
@@ -159,12 +147,12 @@
 	padding: 1px;
 	margin-bottom: 30px;
 	text-decoration: none;
-	color: #592D1D;
+  color: #FFFFFF;
 	font-size: 20px;
 	font-weight: bold;
   }
 
-   @media screen and (max-width: 1330px) {
+  @media screen and (max-width: 1330px) {
     .formImage {
       display: none;
     }
@@ -181,22 +169,20 @@
 
 @media screen and (max-width: 1064px) {
     .container {
-        height: auto;
-        width: 90%; 
+        height: 70%;
+        width: 65%; 
     }
 
     .inputGroup {
         flex-direction: column; 
-        padding: 2rem; 
     }
 	
 	.title p{
-	margin-top: 60px;
 	font-size: 2rem;
 	}
     
     .forgotPasswordLink a{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 }
 
