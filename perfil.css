@@ -101,6 +101,21 @@ margin: 0;
 padding: 0;
 }
 
+.LogoutButton button {
+width: 100%;
+border: 1px solid black;
+margin-top: 10px;
+background-color: #212529;
+border-radius: 5px;
+cursor: pointer;
+font-size: 20px;
+cursor: pointer;
+text-align: center;
+margin: 0;
+padding: 0;
+color: #FFFFFF;
+}
+
 .EditButton a {
 text-decoration: none;
 color: #FFFFFF;
@@ -108,6 +123,14 @@ font-size: 25px;
 font-family: Arial, Helvetica, sans-serif;
 margin-bottom: 30px;
 }
+
+.LogoutButton a {
+	text-decoration: none;
+	
+	font-size: 25px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-bottom: 30px;
+	}
 
 .Information {
 line-height: 15.0px;
@@ -149,7 +172,7 @@ font-family: Arial, Helvetica, sans-serif;
 font-size: 20px;
 }
 
-.subtitleFavorite, .subtitleDescription {
+.subtitleHistoric, .subtitleDescription {
 text-align: center;
 align-items: center;
 color: #FFFFFF;
@@ -175,7 +198,7 @@ justify-content: center;
 max-width: 600px;
 }
 
-.cardFavorite {
+.cardHistoric {
 border: 1px solid #2b3035;
 border-radius: 5px;
 margin-top: 10px;
@@ -285,11 +308,11 @@ textarea {
 		max-width: 15rem;
 	}
 	
-	.subtitleDescription, .subtitleFavorite, .subtitleIntroduction {
+	.subtitleDescription, .subtitleHistoric, .subtitleIntroduction {
 		font-size: 35px;
 	}
 	
-	.DescriptionContainer, .FavoriteContainer{
+	.DescriptionContainer, .HistoricContainer{
 		width: 130%;
 	}	
 }
@@ -303,17 +326,17 @@ textarea {
 		width: 100%;
 	}
 	
-	.ContainerDescriptionArea, .FavoriteContainer {
+	.ContainerDescriptionArea, .HistoricContainer {
 		max-width: 100%;
 		margin: 0;
 		padding: 0;
 	}
 	
-	.FavoriteContainer {
+	.HistoricContainer {
 		overflow-y: auto;
 	}
    
-	.subtitleDescription, .subtitleFavorite, .subtitleIntroduction {
+	.subtitleDescription, .subtitleHistoric, .subtitleIntroduction {
 		font-size: 33px;
 		text-align: center;
 	}
@@ -333,12 +356,17 @@ textarea {
 		max-width: 15rem;
 	}
 	
-	.FavoriteContainer {
+	.HistoricContainer {
 		max-width: 130%;
 	}
 	
-	.cardFavorite {
+	.cardHistoric {
 		width: 100%;
+	}
+
+	.EditButtonbutton, .LogoutButton button {
+		margin: 0;
+		font-size: 10px;
 	}
 	
 }
@@ -379,7 +407,7 @@ textarea {
 		max-width: 100%;
 	}
 	
-	.cardFavorite, .FavoriteContainer {
+	.cardHistoric, .HistoricContainer {
 		max-width: 130%;
 		overflow-y: auto;
 	}
@@ -388,11 +416,11 @@ textarea {
 		text-align: center;
 	}
 	
-	.EditButton {
-		max-width: 100%;
+	.EditButton, .LogoutButton {
+		width: 100%;
 	}
 	
-	.subtitleDescription, .subtitleFavorite, .subtitleIntroduction {
+	.subtitleDescription, .subtitleHistoric, .subtitleIntroduction {
 		font-size: 35px;
 	}
 }
