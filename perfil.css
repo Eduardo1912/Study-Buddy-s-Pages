@@ -54,8 +54,8 @@ align-items: center;
 }
 
 .PerfilImage img {
-	max-width: 20rem;
-	max-height: 16rem;
+	width: 12rem;
+	height: 12rem;
 }
 
 .titlePerfil {
@@ -290,8 +290,8 @@ textarea {
 	}
 	
 	.PerfilImage img {
-		max-width: 20rem;
-		max-height: 14rem;
+		width: 10rem;
+		height: 10rem;
 	}
 
 	.subtitleIntroduction{
@@ -347,11 +347,6 @@ textarea {
 		align-items: center;
 	}
 	
-	.PerfilImage img {
-		max-width: 20rem;
-		max-height: 14rem;
-	}
-	
 	.HistoricContainer {
 		max-width: 130%;
 	}
@@ -375,7 +370,8 @@ textarea {
 	}
 
 	.PerfilImage img {
-		max-height: 13rem;
+		height: 10rem;
+		width: 10rem;
 	}
 }
 
@@ -444,7 +440,7 @@ textarea {
 	}
 
 	.PerfilImage img {
-		max-height: 15rem;
-		max-width: 20rem;
+		height: 9rem;
+		width: 9rem;
 	}
 }
