@@ -245,6 +245,10 @@
     .confirmButton button, .loginButton button{
       max-height: 80%;
     }
+
+    .confirmButton button{
+      font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 575px){
@@ -252,7 +256,7 @@
      width: 85%;
    }
    
-   .title {
+   .title h1{
      font-size: 2.5rem;
      justify-content: center;
      align-items: center;
@@ -266,5 +270,9 @@
    
    .inputBox {
      max-width: 110%;
+   }
+
+   .confirmButton button{
+     font-size: 20px;
    }
 }
